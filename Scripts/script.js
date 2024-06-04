@@ -6,7 +6,7 @@ function tabuada(){
         alert("Por favor, digite um número!");
     }else{
         let n = Number(num.value)
-        tab.innerHTML = "";
+        tab.innerHTML = ""; //para limpar a tabuada depois de colocar os numeros
         for(let c = 1; c <= 10; c++){
             let item = document.createElement("option");
             item.text = `${n} x ${c} = ${n*c}`;
